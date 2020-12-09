@@ -32,6 +32,11 @@
 
 }
 
+.index_pic
+{
+  max-width: 50%;
+}
+
 
 p, .form-group
 {
@@ -44,6 +49,7 @@ p, .form-group
 {
   max-height: 70%;
 }
+
 .text-left
 {
   left: 30;
@@ -55,6 +61,11 @@ p, .form-group
   display: inline;
   
   
+}
+
+.index_pic 
+{
+  max-width: 40%;
 }
 
 h1
@@ -195,6 +206,11 @@ td{
   {
     border-left: none;
   }
+  .index_pic 
+  {
+  max-width: 70%;
+  }
+
 }
 
 /* Tablet */
