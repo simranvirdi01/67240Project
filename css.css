@@ -2,12 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.carousel-item
+/*Organized in alphabetical order */
+/*Media Queries at the bottom of the page */
+
+.align-left 
 {
-    width:100%;
-    max-height: 500px !important;
+  float: left;
 }
 
+.align-right 
+{
+  float: right;
+}
+
+.bio, .bio-tablet, .bio-mobile
+{
+  font-size: 110%;
+}
+.blue
+{
+  color: #0e7594;
+}
+
+.btn-primary
+{
+  background-color: #0e7594 !important;
+}
 
 .carousel-caption 
 {
@@ -15,57 +35,35 @@
   color: black;
 }
 
-.navbar-custom
+.carousel-item
 {
-  background-color: #6e52c2;
-  color: white;
+    width:100%;
+    max-height: 500px !important;
 }
-.navbar-header
+.footer
 {
-  font-family: "Montserrat", sans-serif !important;
   
-}
-.nav-link 
-{
-  color: white !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat",  sans-serif;
+  color: #0e7594
 
 }
 
-.index_pic
+.footer-links 
 {
-  max-width: 50%;
-}
-
-
-p, .form-group
-{
-  font-family: 'Quicksand', sans-serif;
-  font-size:  125%;
+  list-style-type: none;
 
 }
 
-.image_responsive
+.footer-links li 
 {
-  max-height: 70%;
-}
-
-.text-left
-{
-  left: 30;
-}
-
-#sidebar_image
-{
-  max-height: 200px !important;
   display: inline;
-  
-  
+  margin: 11px 20px 0px;
 }
 
-.index_pic 
+.footer-links li a 
 {
-  max-width: 40%;
+  color: #6e52c2;
+  font-size: 100%;
 }
 
 h1
@@ -90,27 +88,82 @@ h4
 
 }
 
-.breadcrumb{
-  
-  font-family: "Montserrat",  sans-serif;
-  color: #0e7594
-
+.image_responsive
+{
+  max-height: 70%;
 }
 
-td{
-  font-family: 'Quicksand', sans-serif;
-  font-size:  125%;
-  border-bottom: 2px solid #0e7594;
+.index_pic 
+{
+  max-width: 40%;
 }
-
 #inputMessage
 {
   height: 200px;
 }
 
-.sidebar {
-  height: 15vh; 
+#logo
+{
+  width: 50px;
+  height: 50px;
+}
+
+.main 
+{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar-custom
+{
+  background-color: #6e52c2;
+  color: white;
+}
+.navbar-header
+{
+  font-family: "Montserrat", sans-serif !important;
   
+}
+
+.nav-link 
+{
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+
+}
+
+p, .form-group
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size:  125%;
+
+}
+
+.programImage 
+{
+  border-radius: 25px;
+}
+
+.purple
+{
+  color: #6e52c2;
+}
+
+.quote
+{
+  font-size: 125%;
+  color: #6e52c2;
+
+}
+
+.service
+{
+  font-size: 110%;
+}
+.sidebar 
+{
+  height: 15vh; 
+  border-radius: 25px;
   min-height: 550px;
   overflow: auto;
   position: -webkit-sticky;
@@ -120,15 +173,27 @@ td{
   padding-top: 1%;
   background: #e9ebee;
   right: 1%;
-  
-
 }
-.quote
+
+#sidebar_image
 {
-  font-size: 125%;
-  color: #6e52c2;
-
+  max-height: 200px !important;
+  display: inline;
+  
+  
 }
+
+td
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size:  125%;
+  border-bottom: 2px solid #0e7594;
+}
+.text-left
+{
+  left: 30;
+}
+
 .titlename
 {
   font-size: 125%;
@@ -137,84 +202,27 @@ td{
   padding: 0;
 }
 
-.blue
-{
-  color: #0e7594;
-}
-.purple
-{
-  color: #6e52c2;
-}
-.btn-primary
-{
-  background-color: #0e7594 !important;
-}
-
-#logo
-{
-  width: 50px;
-  height: 50px;
-}
-
-.align-left {
-  float: left;
-}
-
-.align-right {
-  float: right;
-}
-.footer-links {
-  list-style-type: none;
-  
-
-}
-
-.footer-links li {
-  display: inline;
-  margin: 11px 20px 0px;
-}
-
-.footer-links li a 
-{
-  color: #6e52c2;
-  font-size: 100%;
-}
-
-.bio, .bio-tablet, .bio-mobile
-{
-  font-size: 110%;
-}
-
-.service
-{
-  font-size: 110%;
-}
-
-.main 
-{
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
 /* Mobile */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .bio, .bio-tablet
   {
     display:none;
   }
+  .index_pic 
+  {
+  max-width: 50%;
+  }
   .sidebar 
   {
     border-left: none;
   }
-  .index_pic 
-  {
-  max-width: 70%;
-  }
+  
 
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
   .bio, .bio-mobile
   {
     display:none;
@@ -226,10 +234,24 @@ td{
 }
 
 /* Desktop */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) 
+{
   .bio-mobile, .bio-tablet
   {
     display:none;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
